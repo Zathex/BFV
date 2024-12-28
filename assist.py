@@ -36,7 +36,7 @@ screensize = ctypes.windll.user32.GetSystemMetrics(0), ctypes.windll.user32.GetS
 # or
 #screensize = (1280, 960)
 
-#### END OF BAGINA BOW ####
+#### END OF CHANGE OPTIONS ####
 
 
 
@@ -50,8 +50,8 @@ if distance_limit is not None and distance_limit <= 0:
     exit(1)
 
 if __name__ == "__main__":
-    print("xx4 aim assist Version %s" % version)
-    print("Thanks to Tormund and jo2305")
+    print("zathex aim assist Version %s" % version)
+  
 
     if not helpers.is_admin():
         print("- Error: This must be run with admin privileges")
