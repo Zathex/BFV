@@ -76,7 +76,7 @@ class Aimer:
         while 1:
 
             #change aim location index if key is pressed
-            if self.aim_switch is not None:
+            if self.aim_switch:
                 if cdll.user32.GetAsyncKeyState(self.aim_switch) & 0x8000:
                     aim_switch_pressed = True
                 elif aim_switch_pressed:
@@ -97,7 +97,7 @@ class Aimer:
             self.closestSoldierMovementX = 0
             self.closestSoldierMovementY = 0
 
-            if self.lastSoldier is not 0:
+            if self.lastSoldier != 0:
                 if cdll.user32.GetAsyncKeyState(self.trigger) & 0x8000:
                     found = False
                     for Soldier in data.soldiers:
